@@ -3,7 +3,7 @@ from flask_cors import CORS
 import requests
 
 app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": "https://zippy-trifle.netlify.app/"}})  # Allow only requests from React Vite
+CORS(app, resources={r"/api/*": {"origins": "https://zippy-trifle.netlify.app"}})  # Allow only requests from React Vite
 
 # Nutritionix API credentials
 NUTRITIONIX_APP_ID = '67816ba0'  # Replace with your actual Nutritionix App ID
